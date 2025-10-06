@@ -1,0 +1,65 @@
+:root{
+  --bg: rgb(28,40,38);
+  --accent: rgb(124,196,182);
+  --accent-strong: rgb(45,125,128);
+}
+/* General estilo de fondo del hero */
+.hero-simple {
+  background: #101918; /* mismo tono oscuro */
+  color: #fff;
+  min-height: 100vh; /* que llene la pantalla */
+  display: flex;
+  align-items: center;
+}
+.hero-title { color: var(--accent); font-size: clamp(2rem, 3.5vw, 2.5rem); 
+  background-color: #182422;
+  font-weight: 800; }
+
+/* Estilo para las cards */
+.card {
+  background: #182422;         /* verde oscuro */
+  border: none;                /* quitar borde gris por defecto */
+  border-radius: 15px;         /* bordes redondeados */
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* densidad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagen dentro de card */
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  height: 180px;
+}
+
+/* Títulos */
+.card-title {
+  color: #7cc4b6; /* mismo color acento */
+  font-weight: bold;
+}
+
+/* Botón dentro de la card */
+.card .btn {
+  background: #7cc4b6;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 16px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.card .btn:hover {
+  background: #5fa092; /* más oscuro en hover */
+  transform: scale(1.05);
+}
+
+/* Animación al pasar mouse sobre card */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* Para que las cards no se peguen */
+.card {
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DDA - Hero animado</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Tu CSS -->
+  <link href="CSSstart/index.css" rel="stylesheet">
+</head>
+<body>
+
+ <!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <div class="container">
+    <a class="navbar-brand text-accent fw-bold" href="">
+      <img src="../CSSstart/img/upla-white.png" alt="" style="width: 150px; height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navTrabajos">Trabajos</a>
+          <ul class="dropdown-menu" aria-labelledby="navTrabajos">
+            <li><a class="dropdown-item" href="Semana/semana1.html">Semana 1</a></li>
+            <li><a class="dropdown-item" href="Semana/semana2.html">Semana 2</a></li>
+            <li><a class="dropdown-item" href="Semana/semana3.html">Semana 3</a></li>
+            <li><a class="dropdown-item" href="Semana/semana4.html">Semana 4</a></li>
+            <li><a class="dropdown-item" href="Semana/semana5.html">Semana 5</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown Mis investigaciones -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navInve" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mis investigaciones
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navInve">
+            <li><a class="dropdown-item" href="MisInvest/Invest.html">Investigación 1</a></li>
+            <li><a class="dropdown-item" href="MisInvest/Invest.html">Investigación 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <!-- Hero -->
+<section class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Texto izquierda -->
+      <div class="col-lg-6 text-center text-lg-start">
+        <h1 class="hero-title">DESARROLLO DE APLICATÍVOS</h1>
+        <p class="hero-subtitle">Cruz Quispe Miguel Angel</p>
+        <a href="MisTrabajos/Mistrabajos.html" class="btn btn-principal btn-lg rounded-pill px-4 py-2">
+          Mis trabajos
+        </a>
+        <a href="MisInvest/Invest.html" class="btn btn-principal btn-lg rounded-pill px-4 py-2">
+          Mis Investigaciones
+        </a>
+      </div>
+      
+      <!-- Collage derecha -->
+      <div class="col-lg-6 d-flex justify-content-center">
+        <div class="collage">
+          <img src="CSSstart/img/sem3Verd2.png" class="item item1" alt="Proyecto 1">
+          <img src="CSSstart/img/CodigoPry1.png" class="item item2" alt="Proyecto 2">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- SECCION SOBRE MI -->
+  <section id="sobre-mi" class="container-fluid hero-simple py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="about-title">Sobre mí</h2>
+          <p class="about-text">
+            Mi nombre es Miguel Angel soy estudiante de la Universidad Peruana los Andes de la carrera Ingeniería de Sistemas
+            actualmente cursando el IVciclo ,Este sitio web se hizo con el objetivo de mostrar informacion de los trabajos desarrollados en el curso
+          </p>
+        </div>
+        <div class="col-lg-6 text-end">
+          <img src="CSSstart/img/Sem2Verd1.png" alt="Imagen sobre mi" class="img-fluid about-img rounded-3" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION DE HABILIDADES -->
+  <section id="habilidades" class="container py-5">
+    <h2 class="text-center mb-5" style="color: var(--accent); font-weight:800;">Mis Habilidades</h2>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="mb-4">
+          <span>Java</span>
+          <div class="progress skill-bar">
+            <div class="progress-bar bg-accent" style="width:66%">66%</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <span>JavaScript</span>
+          <div class="progress skill-bar">
+            <div class="progress-bar bg-accent" style="width:50%">50%</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <span>CSS</span>
+          <div class="progress skill-bar">
+            <div class="progress-bar bg-accent" style="width:50%">50%</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <span>HTML</span>
+          <div class="progress skill-bar">
+            <div class="progress-bar bg-accent" style="width:50%">50%</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <span>Bootstrap</span>
+          <div class="progress skill-bar">
+            <div class="progress-bar bg-accent" style="width:50%">50%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid py-4" style="background: #101918; color: #fff;">
+    <div class="row align-items-center text-center text-lg-start">
+      <div class="col-lg-4 mb-3 mb-lg-0">
+        <p>©2025 Este sitio fue creado sin fines de lucro</p>
+      </div>
+      <div class="col-lg-4 mb-3 mb-lg-0">
+        <p>Semanas:</p>
+        <a href="Semana/semana1.html" class="footer-link">Semana 1</a>
+        <a href="#week2" class="footer-link">Semana 2</a>
+        <a href="#week3" class="footer-link">Semana 3</a>
+        <a href="#week4" class="footer-link">Semana 4</a>
+      </div>
+      <div class="col-lg-4">
+        <p>Investigaciones:</p>
+        <a href="#inv1" class="footer-link">Qué es GitHub</a>
+        <a href="#inv2" class="footer-link">Qué es Git</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="CSSstart/index.js"></script>
+
+<style>
+:root{
+  --bg: rgb(28,40,38);
+  --accent: rgb(124,196,182);
+  --accent-strong: rgb(45,125,128);
+}
+
+body { background: #0c1413; color: #fff; font-family: 'Montserrat', sans-serif; }
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #476d65, #172b28);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  padding: 3rem 0;
+}
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+.hero-title { color: var(--accent); font-size: clamp(2rem, 4.5vw, 3.5rem); font-weight: 800; }
+.hero-subtitle { color: rgba(255,255,255,0.7); font-size: 1.2rem; font-weight:600; }
+
+/* Collage */
+.project-collage img {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.project-collage img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(124,196,182,0.3);
+}
+
+/* Botón */
+.btn-principal {
+  background-color: #266f91;
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+.btn-principal:hover {
+  background-color: #0056b3;
+}
+
+/* Skills */
+.skill-bar {
+  height: 25px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.skill-bar .progress-bar {
+  background: var(--accent);
+  font-weight: 600;
+  transition: width .6s ease;
+}
+.skill-bar:hover .progress-bar {
+  background: var(--accent-strong);
+}
+
+/* Footer links */
+footer a.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color .3s ease;
+}
+footer a.footer-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.collage {
+  position: relative;
+  width: 100%;
+  max-width: 460px;   /* ocupa hasta la mitad */
+  min-height: 380px;  /* altura fija para que luzca */
+}
+
+.collage .item {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease, z-index 0.3s ease;
+}
+
+/* Imagen destacada (más grande) */
+.item1 {
+  width: 520px; height: 460px;
+  top: 0; left: 10%;
+  transform: rotate(-2deg);
+}
+
+/* Imagen mediana */
+.item2 {
+  width: 480px; height: 340px;
+  top: 60px; left: 55%;
+  transform: rotate(3deg);
+}
+
+
+
+/* Hover dinámico */
+.collage .item:hover {
+  transform: scale(1.1) rotate(0deg);
+  z-index: 10;
+}
+</style>
+<!-- CSS extra -->
+<style>
+.custom-navbar {
+  background: rgb(70, 99, 94);
+  position: sticky;   /* se mantiene al hacer scroll */
+  top: 10px;          /* separación desde arriba */
+  margin: 0 auto;     /* centrado si quieres */
+  border-radius: 15px;/* bordes curvados */
+  width: 95%;         /* un poco más pequeña que el viewport */
+  z-index: 1030;      /* para estar encima de otros elementos */
+}
+
+/* Animación para los links */
+.custom-navbar .nav-link,
+.custom-navbar .dropdown-item {
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .dropdown-item:hover {
+  background-color: #4caf50 !important;
+  color: white !important;
+  border-radius: 10px;
+}
+</style>
+</body>
+</html>
+

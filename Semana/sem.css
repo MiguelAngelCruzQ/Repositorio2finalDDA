@@ -1,0 +1,216 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #101918;
+  color: #fff;
+}
+body {
+  background: #0d0d0d;
+  overflow-x: hidden;
+}
+
+
+/* Fondo estilo código cayendo */
+.code-fall {
+  position: absolute; /* se queda fijo dentro de la sección */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none; /* no tapa los botones ni links */
+  z-index: 0; /* detrás del contenido */
+  color: rgba(34, 58, 43, 0.6);
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.hero .container, 
+.hero .row {
+  position: relative;
+  z-index: 1; /* mantiene el contenido encima del efecto */
+}
+
+
+/* HERO base */
+.hero {
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.hero-dark {
+  background: rgb(28,40,38);
+  color: rgb(124,196,182);
+}
+
+.hero-light {
+  background: rgb(124,196,182);
+  color: #1c2826;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* Imagen hero */
+.hero-img {
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Botones */
+.btn-accent {
+  background: rgb(124,196,182);
+  color: #1c2826;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background: #5fa092;
+  color: #fff;
+}
+
+.btn-outline-light {
+  border-radius: 25px;
+}
+
+/* --- Animaciones --- */
+
+/* Fade-in */
+.animate-fade {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeIn 1s forwards;
+}
+/*Lista semana 1*/
+.lista1{
+text-align: left;
+
+}
+.mi-tabla {
+  border-collapse: collapse;  /* elimina espacios entre celdas */
+  width: 60%;                 /* ancho de la tabla */
+  margin: 20px auto;          /* centrada en la página */
+  text-align: left;           /* alinear texto */
+}
+
+.mi-tabla th, .mi-tabla td {
+  border: 1px solid #333;     /* borde de cada celda */
+  padding: 10px;              /* espacio interno */
+}
+
+.mi-tabla th {
+  background-color: #114141;  /* color de cabecera */
+  color: white;
+}
+
+.mi-tabla tr:nth-child(even) {
+  background-color: #f2f2f2;  /* filas alternadas */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Desde la izquierda */
+.animate-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideLeft 1s forwards;
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Contenedor de lluvia de código */
+.code-fall {
+  position: absolute; /* relativo a la sección donde lo colocaste */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0; /* detrás del contenido (asegúrate .hero .container tenga z-index > 0) */
+  font-family: monospace;
+}
+
+/* cada carácter */
+.code-fall span {
+  position: absolute;
+  top: -2rem; /* parte fuera de la zona para "caer" */
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform, opacity;
+  color: rgba(0, 255, 120, 0.65); /* ajusta color */
+  mix-blend-mode: screen;
+}
+
+/* animación que baja hasta fuera de la pantalla */
+@keyframes fall {
+  to {
+    transform: translateY(calc(100vh + 80px));
+    opacity: 0;
+  }
+}
+
+/* asegúrate de que el contenido quede encima */
+.hero .container,
+.hero .row {
+  position: relative;
+  z-index: 1;
+}
+.carousel-container {
+  perspective: 1000px; 
+  width: 100%;                 /* ocupa todo el ancho del contenedor */
+  display: flex;
+  justify-content: center;      /* centra horizontalmente */
+  align-items: center;          /* centra verticalmente */
+  overflow: visible;            /* evita que las imágenes se corten */
+}
+
+
+.carousel img {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+/* Distribución en círculo alrededor del eje Y */
+.carousel img:nth-child(1) { transform: rotateY(0deg) translateZ(200px); }
+.carousel img:nth-child(2) { transform: rotateY(120deg) translateZ(200px); }
+.carousel img:nth-child(3) { transform: rotateY(240deg) translateZ(200px); }
+
+
+/* Animación de rotación */
+.carousel {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite; /* más lenta y suave */
+}
+
+@keyframes rotate {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
