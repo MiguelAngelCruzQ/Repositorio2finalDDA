@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana 13 - Desarrollo de Aplicativos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="sem.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark modern-nav">
+    <div class="container">
+      <a class="navbar-brand text-accent fw-bold" href="../index.html">
+        <img src="../CSSstart/img/upla-white.png" alt="UPLA" class="nav-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"><i class="bi bi-house me-1"></i>Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../MisTrabajos/Mistrabajos.html"><i class="bi bi-briefcase me-1"></i>Mis trabajos</a>
+          </li>
+        </ul>     
+      </div>
+    </div>
+  </nav> 
+
+  <section class="hero hero-gradient d-flex align-items-center">
+    <div class="hero-particles"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-content animate-slide-in">
+            <div class="week-badge">
+              <i class="bi bi-cloud"></i>
+              <span>Semana 13</span>
+            </div>
+            <h1 class="hero-title">Base de Datos</h1>
+            <p class="hero-subtitle">
+              Implementación y configuración de la base de datos MySQL. 
+              Diseño de esquemas, relaciones, procedimientos almacenados y optimización de consultas.
+            </p>
+            
+            <div class="hero-stats">
+              <div class="stat-card">
+                <i class="bi bi-database"></i>
+                <div>
+                  <span class="stat-number">12</span>
+                  <span class="stat-label">Tablas</span>
+                </div>
+              </div>
+              <div class="stat-card">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <span class="stat-number">8</span>
+                  <span class="stat-label">Relaciones</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary btn-lg">
+                <i class="bi bi-download me-2"></i>Scripts SQL
+              </a>
+              <a href="https://github.com/MiguelAngelCruzQ/ProyectoFinal2_IVC/tree/main/src/main/java/com/mycompany/proyectojsp_ivcupla/dao" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-github me-2"></i>Ver Código
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="hero-visual">
+            <div class="database-preview">
+              <div class="database-header">
+                <div class="database-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="database-title">Base de Datos MySQL - Sistema de Tesis</span>
+              </div>
+              <div class="database-content">
+                <img src="../CSSstart/img/Semana13.png" alt="Base de Datos del Sistema" class="database-main-image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTRUCTURA DE BASE DE DATOS -->
+  <section class="projects-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="bi bi-database me-2"></i>Estructura de Base de Datos
+      </h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-person"></i>
+              </div>
+              <h3>Tabla Usuarios</h3>
+            </div>
+            <div class="project-body">
+              <p>Almacena información de estudiantes, docentes y administradores con roles.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Primary Key</span>
+                <span class="tech-tag">Constraints</span>
+                <span class="tech-tag">Indexes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-journal-bookmark"></i>
+              </div>
+              <h3>Tabla Tesis</h3>
+            </div>
+            <div class="project-body">
+              <p>Información completa de bocetos: título, resumen, aspirante y estado.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Foreign Keys</span>
+                <span class="tech-tag">Text Fields</span>
+                <span class="tech-tag">Status Enum</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3>Tabla Jurados</h3>
+            </div>
+            <div class="project-body">
+              <p>Relación many-to-many entre tesis y docentes con roles específicos.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Junction Table</span>
+                <span class="tech-tag">Role Types</span>
+                <span class="tech-tag">Constraints</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-clipboard-data"></i>
+              </div>
+              <h3>Tabla Calificaciones</h3>
+            </div>
+            <div class="project-body">
+              <p>Almacena las 38 calificaciones de formatos 4 y 5 por cada jurado.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Composite Keys</span>
+                <span class="tech-tag">JSON Fields</span>
+                <span class="tech-tag">Calculations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <h3>Tabla Actas</h3>
+            </div>
+            <div class="project-body">
+              <p>Registro de actas generadas con resultados finales y rutas de archivos PDF.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">File Paths</span>
+                <span class="tech-tag">Timestamps</span>
+                <span class="tech-tag">Status Tracking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h3>Procedimientos Almacenados</h3>
+            </div>
+            <div class="project-body">
+              <p>Lógica compleja para cálculos de promedios y generación de reportes.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Stored Procedures</span>
+                <span class="tech-tag">Functions</span>
+                <span class="tech-tag">Triggers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGRAMA DE RELACIONES -->
+  <section class="theory-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="bi bi-diagram-3 me-2"></i>Diseño de Base de Datos
+      </h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-8 mx-auto">
+          <div class="theory-content">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Análisis de Requisitos</h4>
+                <p>Identificación de entidades principales: usuarios, tesis, jurados, calificaciones y actas.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Modelo Entidad-Relación</h4>
+                <p>Diseño de relaciones: 1:N entre usuario-tesis, M:N entre tesis-jurados.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Normalización</h4>
+                <p>Aplicación de formas normales para eliminar redundancia y mantener integridad.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4>Índices y Optimización</h4>
+                <p>Creación de índices en campos de búsqueda frecuente y claves foráneas.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h4>Restricciones e Integridad</h4>
+                <p>Implementación de constraints, triggers y validaciones a nivel de base de datos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPTURAS DE BASE DE DATOS -->
+  <section class="screenshots-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="bi bi-images me-2"></i>Esquemas y Diagramas de Base de Datos
+      </h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="screenshot-card">
+            <div class="screenshot-image">
+              <img src="../CSSstart/img/ModeloRelacional_Sem13.png" alt="Modelo Relacional Principal" class="img-fluid">
+              <div class="screenshot-overlay">
+                <h5>Modelo Relacional Principal</h5>
+                <p>Diagrama ER completo del sistema de tesis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="screenshot-card">
+            <div class="screenshot-image">
+              <img src="../CSSstart/img/ModeloRelacional2_Sem13.png" alt="Modelo Relacional Detallado" class="img-fluid">
+              <div class="screenshot-overlay">
+                <h5>Modelo Relacional Detallado</h5>
+                <p>Vista detallada de relaciones y constraints</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="screenshot-card">
+            <div class="screenshot-image">
+              <img src="../CSSstart/img/Trigger_sem13.png" alt="Triggers y Procedimientos" class="img-fluid">
+              <div class="screenshot-overlay">
+                <h5>Triggers y Procedimientos</h5>
+                <p>Código SQL de triggers y stored procedures</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="screenshot-card">
+            <div class="screenshot-image">
+              <img src="../CSSstart/img/Semana13.png" alt="Estructura Completa" class="img-fluid">
+              <div class="screenshot-overlay">
+                <h5>Estructura Completa</h5>
+                <p>Vista general de la base de datos implementada</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="modern-footer py-4">
+    <div class="container">
+      <div class="text-center">
+        <h5 class="fw-bold">Semana 13 - APIs REST</h5>
+        <p>&copy; 2025 Miguel Cruz. Desarrollo de Aplicativos - UPLA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="semanas.js"></script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semanas</title>
+  <title>Semana 9 - Desarrollo de Aplicativos</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,96 +14,393 @@
 </head>
 <body>
 <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(28,40,38);">
+  <nav class="navbar navbar-expand-lg navbar-dark modern-nav">
     <div class="container">
-      <a class="navbar-brand text-accent fw-bold" href="../index.html"><img src="../CSSstart/img/upla-white.png" alt=""></a>
+      <a class="navbar-brand text-accent fw-bold" href="../index.html">
+        <img src="../CSSstart/img/upla-white.png" alt="UPLA" class="nav-logo">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navMain">
         <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"><i class="bi bi-house me-1"></i>Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../MisTrabajos/Mistrabajos.html"><i class="bi bi-briefcase me-1"></i>Mis trabajos</a>
+          </li>
           <li class="nav-item dropdown">
-    <!-- Link Mis trabajos -->
-    <li class="nav-item">
-      <a class="nav-link" href="../index.html">Inicio</a>
-    </li>
-    <!-- Link Mis trabajos -->
-    <li class="nav-item">
-      <a class="nav-link" href="../MisTrabajos/Mistrabajos.html">Mis trabajos</a>
-    </li>
-  </ul>     
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-calendar-week me-1"></i>Otras Semanas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="semana1.html">Semana 1</a></li>
+              <li><a class="dropdown-item" href="semana2.html">Semana 2</a></li>
+              <li><a class="dropdown-item" href="semana3.html">Semana 3</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="semana10.html">Semana 10</a></li>
+              <li><a class="dropdown-item" href="semana11.html">Semana 11</a></li>
+            </ul>
+          </li>
+        </ul>     
       </div>
     </div>
   </nav> 
-  <!-- HERO 1 -->
-  <section class="hero hero-dark d-flex align-items-center text-center">
-    
+
+  <!-- HERO PRINCIPAL -->
+  <section class="hero hero-gradient d-flex align-items-center">
+    <div class="hero-particles"></div>
     <div class="container">
-        <div class="row align-items-center">
+      <div class="row align-items-center">
         <div class="col-lg-6">
-        <h1 class="hero-title animate-fade">Semana 9</h1>
-      <h2 class="hero-title animate-fade">Primer Proyecto Base de datos</h2>
-      <p class="hero-subtitle">
-Se aplica TomCat para generar la interfaz de experiencia de usuario en un
-entorno web mediante JSP o java server pages la cual permite escribir codigo java
-entre html css y js mediante etiquetas especiales como <%....%> u otras.
-En la presente semana creamos el maquetado en figma y desarrollamos el login
-con la clase JSP mediante tomCat con un servidor local ademas de indicar 4 frameworks de css. 
-</p>
-      
-        <div class="mt-3">
-            <a href="../pdf/4FrameworkCSS.pdf" class="btn btn-accent me-2"><i class="bi bi-download"></i> Descargar Documentación</a>
+          <div class="hero-content animate-slide-in">
+            <div class="week-badge">
+              <i class="bi bi-calendar3"></i>
+              <span>Semana 9</span>
+            </div>
+            <h1 class="hero-title">Diseño de Aplicativo Web</h1>
+            <p class="hero-subtitle">
+              Diseño de interfaces de usuario y experiencia de usuario utilizando Figma. 
+              Creación de wireframes, prototipos y sistemas de diseño para aplicaciones web.
+            </p>
+            
+            <div class="hero-stats">
+              <div class="stat-card">
+                <i class="bi bi-layout-text-window"></i>
+                <div>
+                  <span class="stat-number">12</span>
+                  <span class="stat-label">Pantallas</span>
+                </div>
+              </div>
+              <div class="stat-card">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <span class="stat-number">5</span>
+                  <span class="stat-label">Flujos</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="https://www.figma.com/design/zQ6RuUxjcCRNP5YovdzG9y/LoginSem10Tesisv2?node-id=0-1&m=dev&t=2HhFsNLp2kiXI4hU-1" class="btn btn-primary btn-lg">
+                <i class="bi bi-figma me-2"></i>Ver en Figma
+              </a>
+              <a href="#" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-github me-2"></i>Ver Repositorio
+              </a>
+            </div>
           </div>
-           <div class="mt-3">
-            <a href="https://www.figma.com/design/Jc3kREcswDEguy7B7Eju27/ModeladoFrontApliSustTesisUPLA?node-id=0-1&m=dev&t=qm8HP2SMyfOwyxO3-1" class="btn btn-accent me-2"><i class="bi bi-download"></i> Ver Figma</a>
-          </div>
-    </div>
-    <div class="col-lg-6 text-center">
-          <!-- Imagen -->
-          <img src="../CSSstart/img/Semana1.png" alt="Semana 2" class="img-fluid hero-img">
         </div>
-    </div>
+        
+        <div class="col-lg-6">
+          <div class="hero-visual">
+            <div class="figma-preview">
+              <div class="figma-header">
+                <div class="figma-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="figma-title">Sistema_Calificacion_Tesis.fig</span>
+              </div>
+              <div class="figma-content">
+                <img src="../CSSstart/img/Mockup_Sem9.png" alt="Diseño del Sistema en Figma" class="figma-main-image">
+              </div>
+            </div>
+            
+            <div class="floating-elements">
+              <div class="float-item figma-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <div class="float-item design-icon">
+                <i class="bi bi-brush"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-light py-4 mt-5">
-  <div class="container">
-    <div class="row align-items-center">
+  <!-- DISEÑOS SECTION -->
+  <section class="projects-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="bi bi-palette me-2"></i>Sistema de Calificación de Bocetos de Tesis
+      </h2>
       
-      <!-- Información -->
-      <div class="col-lg-6 mb-3 mb-lg-0">
-        <h5 class="fw-bold">Proyecto Semanas</h5>
-        <p>Recopilación de trabajos y documentación de todas las semanas del curso.</p>
+      <div class="row g-4">
+        <!-- Descripción del Proyecto -->
+        <div class="col-lg-12">
+          <div class="project-overview">
+            <div class="overview-content">
+              <h3><i class="bi bi-mortarboard me-2"></i>Descripción del Proyecto</h3>
+              <p class="lead">
+                Sistema web para la gestión y calificación de bocetos de tesis universitarios. 
+                Permite el registro de tesis, asignación de jurados, calificación mediante formatos 
+                institucionales y generación automática de actas en PDF.
+              </p>
+              
+              <div class="project-features">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                      <i class="bi bi-person-plus"></i>
+                      <div>
+                        <h5>Gestión de Usuarios</h5>
+                        <p>Estudiantes, docentes y administradores</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                      <i class="bi bi-journal-text"></i>
+                      <div>
+                        <h5>Registro de Tesis</h5>
+                        <p>Información completa del boceto y aspirante</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                      <i class="bi bi-people"></i>
+                      <div>
+                        <h5>Asignación de Jurados</h5>
+                        <p>3 jurados + 1 presidente + 1 asesor</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                      <i class="bi bi-clipboard-check"></i>
+                      <div>
+                        <h5>Calificación (38 ítems)</h5>
+                        <p>Formatos 4 y 5 de la universidad</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                      <i class="bi bi-file-pdf"></i>
+                      <div>
+                        <h5>Generación de Actas</h5>
+                        <p>PDF automático con resultados</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                      <i class="bi bi-arrow-repeat"></i>
+                      <div>
+                        <h5>Estados del Boceto</h5>
+                        <p>Aprobado, Rechazado, Para Corregir</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Botones y enlaces -->
-      <div class="col-lg-6 text-lg-end">
-        <a href="archivos/semana1-3.zip" download class="btn btn-accent me-2 mb-2">
-          <i class="bi bi-download"></i> Descargar Todo
-        </a>
-        <a href="pdfs/resumen_semana3.pdf" target="_blank" class="btn btn-outline-light me-2 mb-2">
-          <i class="bi bi-file-earmark-text"></i> Ver PDF
-        </a>
-        <a href="https://github.com/usuario/proyecto-semanas" target="_blank" class="btn btn-outline-light mb-2">
-          <i class="bi bi-github"></i> Repositorio
-        </a>
+  <!-- TEORÍA Y PROCESO -->
+  <section class="theory-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="bi bi-book me-2"></i>Proceso de Diseño
+      </h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-8 mx-auto">
+          <div class="theory-content">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Investigación y Análisis</h4>
+                <p>Análisis de usuarios, competencia y definición de requisitos funcionales y no funcionales del aplicativo web.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Arquitectura de Información</h4>
+                <p>Organización del contenido, creación de mapas de sitio y definición de flujos de usuario principales.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Wireframing</h4>
+                <p>Creación de estructuras básicas de las pantallas, definiendo layout y jerarquía de elementos.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4>Diseño Visual</h4>
+                <p>Aplicación de colores, tipografías, iconografía y elementos gráficos siguiendo principios de diseño.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h4>Prototipado</h4>
+                <p>Creación de prototipos interactivos para validar la experiencia de usuario y flujos de navegación.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
+  </section>
 
-    <!-- Copyright -->
-    <div class="text-center mt-3">
-      <small>&copy; 2025 Miguel Cruz. Todos los derechos reservados.</small>
+  <!-- CAPTURAS SECTION -->
+  <section class="screenshots-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="bi bi-images me-2"></i>Capturas del Proceso de Diseño
+      </h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="screenshot-card">
+            <div class="screenshot-image">
+              <img src="../CSSstart/img/FigmaLogin_Sem9.png" alt="Diseño de Login en Figma" class="img-fluid">
+              <div class="screenshot-overlay">
+                <h5>Diseño de Login en Figma</h5>
+                <p>Interfaz de autenticación del sistema</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="screenshot-card">
+            <div class="screenshot-image">
+              <img src="../CSSstart/img/Mockup_Sem9.png" alt="Mockups del Sistema" class="img-fluid">
+              <div class="screenshot-overlay">
+                <h5>Mockups del Sistema</h5>
+                <p>Diseños finales de las pantallas principales</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="screenshot-card">
+            <div class="screenshot-image">
+              <img src="../CSSstart/img/Movilidad_Sem9.png" alt="Diseño Responsive" class="img-fluid">
+              <div class="screenshot-overlay">
+                <h5>Diseño Responsive</h5>
+                <p>Adaptación para dispositivos móviles</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="screenshot-card">
+            <div class="screenshot-image">
+              <img src="../CSSstart/img/12_Sem9.png" alt="Pantallas Completas" class="img-fluid">
+              <div class="screenshot-overlay">
+                <h5>Pantallas Completas</h5>
+                <p>Vista general de todas las interfaces</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
-  <!-- Bootstrap JS -->
+  </section>
+
+  <!-- CONCEPTOS APRENDIDOS -->
+  <section class="concepts-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="bi bi-lightbulb me-2"></i>Conceptos de Diseño Aprendidos
+      </h2>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="concept-card">
+            <div class="concept-icon">
+              <i class="bi bi-person-check"></i>
+            </div>
+            <h4>User Experience</h4>
+            <p>Diseño centrado en el usuario, creando experiencias intuitivas y eficientes.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="concept-card">
+            <div class="concept-icon">
+              <i class="bi bi-palette"></i>
+            </div>
+            <h4>User Interface</h4>
+            <p>Diseño visual de interfaces atractivas y funcionales siguiendo principios de diseño.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="concept-card">
+            <div class="concept-icon">
+              <i class="bi bi-grid-3x3"></i>
+            </div>
+            <h4>Wireframing</h4>
+            <p>Creación de estructuras básicas para definir layout y arquitectura de información.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="concept-card">
+            <div class="concept-icon">
+              <i class="bi bi-play-circle"></i>
+            </div>
+            <h4>Prototipado</h4>
+            <p>Desarrollo de prototipos interactivos para validar ideas y flujos de usuario.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="modern-footer py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-3 mb-lg-0">
+          <h5 class="fw-bold">Semana 9 - POO Avanzada</h5>
+          <p class="mb-0">Implementación de conceptos avanzados de programación orientada a objetos.</p>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <div class="footer-links">
+            <a href="#" class="btn btn-outline-light btn-sm me-2">
+              <i class="bi bi-download"></i> Descargar
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm me-2">
+              <i class="bi bi-file-text"></i> Documentación
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>&copy; 2025 Miguel Cruz. Desarrollo de Aplicativos - UPLA</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <!-- JS personalizado -->
   <script src="semanas.js"></script>
 </body>
 </html>

@@ -1,132 +1,717 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-<!-- Tu CSS -->
-  <link href="trabajos.css" rel="stylesheet">
-    <title>DDA Mis trabajos</title>
+    <title>Mis Trabajos - Desarrollo de Aplicativos</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link href="trabajos.css" rel="stylesheet">
 </head>
 <body>
-     <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(28,40,38);">
-    <div class="container">
-      <a class="navbar-brand text-accent fw-bold" href="../index.html"><img src="../CSSstart/img/upla-white.png" alt="" style="width: 150px ;height: 50px;"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- NAVEGACIÓN MODERNA -->
+    <nav class="navbar navbar-expand-lg navbar-dark modern-nav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../CSSstart/img/upla-white.png" alt="UPLA" class="nav-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- Link Mis trabajos -->
-    <li class="nav-item">
-      <a class="nav-link" href="../index.html" style="color: white;">Inicio</a>
-    </li>
-  </ul>     
-      </div>
-    </div>
-  </nav> 
-        <h1 class="hero-title">Mis trabajos</h1>
-  <section id="mis-trabajos" class="container-fluid hero-simple py-5">
-  <div class="container">
-    <div class="row g-4">
-      <!-- Card repetida 8 veces -->
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100 d-flex flex-column">
-          <img src="../CSSstart/img/Semana1.png" class="card-img-top" style="width:300px;height:180px ;"alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Semana 1</h5>
-            <p class="card-text flex-grow-1">Sistemas con libreria swing y logica desarrollada en la misma clase,2 proyectos creados con esta tecnologia indicando su proceso de creacion.</p>
-            <a href="../Semana/semana1.html" class="btn mt-auto">Ver documentación</a>
-          </div>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="bi bi-house me-1"></i>Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="bi bi-briefcase me-1"></i>Mis Trabajos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../MisInvest/Invest.html">
+                            <i class="bi bi-search me-1"></i>Investigaciones
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
 
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100 d-flex flex-column">
-          <img src="../CSSstart/img/Semana2.png" class="card-img-top"style="width:300px;height:180px ;" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Semana 2</h5>
-            <p class="card-text flex-grow-1">En esta clase vimos como desarrollar un proyecto en java usando metodos asignando dependencias de uso y llamandolas despues cuando las necesitamos,creamos 2 proyectos utilizando metodos  </p>
-            <a href="../Semana/semana2.html" class="btn mt-auto">Ver documentación</a>
-          </div>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <i class="bi bi-code-slash me-3"></i>
+                            Mis Trabajos
+                        </h1>
+                        <p class="hero-subtitle">
+                            Colección completa de proyectos desarrollados durante el curso de 
+                            Desarrollo de Aplicativos. Desde conceptos básicos hasta proyectos avanzados.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="15">0</span>
+                                <span class="stat-label">Semanas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="35">0</span>
+                                <span class="stat-label">Proyectos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="8">0</span>
+                                <span class="stat-label">Tecnologías</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-<div class="col-lg-3 col-md-6">
-        <div class="card h-100 d-flex flex-column">
-          <img src="../CSSstart/img/Semana4.png" class="card-img-top" style="width:300px;height:180px ;" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Semana 3</h5>
-            <p class="card-text flex-grow-1">En esta clase vimos como utilizar otras clases para inicializar objetos dentro de la clase GUI o swing de esta manera separando la logica de la obtencion de los dstos necesarios ,aplicamos este conocimiento a 2 proyectos </p>
-            <a href="../Semana/semana3.html" class="btn mt-auto">Ver documentación</a>
-          </div>
+    </section>
+    <!-- FILTROS Y BÚSQUEDA -->
+    <section class="filters-section py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="filters-container">
+                        <div class="search-box">
+                            <i class="bi bi-search"></i>
+                            <input type="text" id="searchInput" placeholder="Buscar por semana o tecnología...">
+                        </div>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">
+                                <i class="bi bi-grid me-1"></i>Todas
+                            </button>
+                            <button class="filter-btn" data-filter="basico">
+                                <i class="bi bi-play me-1"></i>Básico
+                            </button>
+                            <button class="filter-btn" data-filter="intermedio">
+                                <i class="bi bi-gear me-1"></i>Intermedio
+                            </button>
+                            <button class="filter-btn" data-filter="avanzado">
+                                <i class="bi bi-star me-1"></i>Avanzado
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100 d-flex flex-column">
-          <img src="../CSSstart/img/Semana5.png" class="card-img-top"style="width:300px;height:180px ;" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Semana 4</h5>
-            <p class="card-text flex-grow-1">En esta clase vemos la aplicacion de la arquitectura de software MVC,esta arquitectura se usa principalmente para enseñar el uso de dependencias dentro de una aplicacion y prepara la logica para entender a otras mas complejas y mas actuales ,ponemos a prueba este conocimiento mediante 2 proyectos  </p>
-            <a href="../Semana/semana4.html" class="btn mt-auto">Ver documentación</a>
-          </div>
+    </section>
+
+    <!-- GRID DE TRABAJOS -->
+    <section class="works-section py-5">
+        <div class="container">
+            <div class="row g-4" id="worksGrid">
+                
+                <!-- SEMANA 1 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="basico" data-week="1">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/Semana1.png" alt="Semana 1">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana1.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge basico">Básico</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 1</h3>
+                            <p class="work-description">
+                                Sistemas con librería Swing y lógica desarrollada en la misma clase. 
+                                2 proyectos creados con esta tecnología.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Swing</span>
+                                <span class="tech-tag">GUI</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-code-slash"></i> 2 Proyectos</span>
+                                </div>
+                                <a href="../Semana/semana1.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 2 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="basico" data-week="2">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/Semana2.png" alt="Semana 2">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana2.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge basico">Básico</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 2</h3>
+                            <p class="work-description">
+                                Desarrollo en Java usando métodos, asignando dependencias de uso 
+                                y llamándolas cuando las necesitamos.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Métodos</span>
+                                <span class="tech-tag">Funciones</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-code-slash"></i> 2 Proyectos</span>
+                                </div>
+                                <a href="../Semana/semana2.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 3 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="basico" data-week="3">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/Semana4.png" alt="Semana 3">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana3.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge basico">Básico</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 3</h3>
+                            <p class="work-description">
+                                Utilización de otras clases para inicializar objetos dentro de la clase GUI, 
+                                separando la lógica de la obtención de datos.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">OOP</span>
+                                <span class="tech-tag">Clases</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-code-slash"></i> 2 Proyectos</span>
+                                </div>
+                                <a href="../Semana/semana3.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 4 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="intermedio" data-week="4">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/Semana5.png" alt="Semana 4">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana4.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge intermedio">Intermedio</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 4</h3>
+                            <p class="work-description">
+                                Aplicación de la arquitectura de software MVC. Esta arquitectura enseña 
+                                el uso de dependencias dentro de una aplicación.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">MVC</span>
+                                <span class="tech-tag">Arquitectura</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-code-slash"></i> 2 Proyectos</span>
+                                </div>
+                                <a href="../Semana/semana4.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 5 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="intermedio" data-week="5">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/Semana5.png" alt="Semana 5">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana5.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge intermedio">Intermedio</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 5</h3>
+                            <p class="work-description">
+                                Desarrollo de documentación de un proyecto de consultorio local 
+                                que registre datos de médicos, pacientes y horarios.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Documentación</span>
+                                <span class="tech-tag">Sistema</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-file-text"></i> Documentación</span>
+                                </div>
+                                <a href="../Semana/semana5.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 6 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="intermedio" data-week="6">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/Semana5.png" alt="Semana 6">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana6.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge intermedio">Intermedio</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 6</h3>
+                            <p class="work-description">
+                                Desarrollo de Base de datos del proyecto final y forma de proyecto. 
+                                Diseño de esquemas y relaciones.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Base de Datos</span>
+                                <span class="tech-tag">Diseño</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-database"></i> Base de Datos</span>
+                                </div>
+                                <a href="../Semana/semana6.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 7 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="intermedio" data-week="7">
+                    <div class="work-card coming-soon">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/I7HPH6EMIFNODANNCEVCDBH4BM.png" alt="Semana 7">
+                            <div class="work-overlay">
+                                <div class="coming-soon-badge">
+                                    <i class="bi bi-clock"></i>
+                                    <span>Próximamente</span>
+                                </div>
+                            </div>
+                            <div class="work-badge intermedio">Intermedio</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 7</h3>
+                            <p class="work-description">
+                                En proceso de desarrollo. Contenido disponible próximamente.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag disabled">Java</span>
+                                <span class="tech-tag disabled">En desarrollo</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-hourglass-split"></i> En desarrollo</span>
+                                </div>
+                                <button class="btn-primary disabled" disabled>Próximamente</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 8 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="intermedio" data-week="8">
+                    <div class="work-card coming-soon">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/I7HPH6EMIFNODANNCEVCDBH4BM.png" alt="Semana 8">
+                            <div class="work-overlay">
+                                <div class="coming-soon-badge">
+                                    <i class="bi bi-clock"></i>
+                                    <span>Próximamente</span>
+                                </div>
+                            </div>
+                            <div class="work-badge intermedio">Intermedio</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 8</h3>
+                            <p class="work-description">
+                                En proceso de desarrollo. Contenido disponible próximamente.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag disabled">Java</span>
+                                <span class="tech-tag disabled">En desarrollo</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-hourglass-split"></i> En desarrollo</span>
+                                </div>
+                                <button class="btn-primary disabled" disabled>Próximamente</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 9 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="avanzado" data-week="9">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/Mockup_Sem9.png" alt="Semana 9 - Diseño UI/UX">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana9.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge avanzado">Avanzado</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 9</h3>
+                            <p class="work-description">
+                                Diseño de aplicativo web utilizando Figma. Creación de wireframes, 
+                                mockups y prototipos interactivos para la interfaz de usuario.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">UI/UX</span>
+                                <span class="tech-tag">Prototipado</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-palette"></i> 5 Diseños</span>
+                                </div>
+                                <a href="../Semana/semana9.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 10 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="avanzado" data-week="10">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/Sem_10.png" alt="Semana 10 - Diseño JSP">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana10.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge avanzado">Avanzado</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 10</h3>
+                            <p class="work-description">
+                                Desarrollo de páginas JSP para crear interfaces web dinámicas. 
+                                Integración de HTML, CSS, JavaScript y código Java en el servidor.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">JSP</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-file-code"></i> 6 Páginas JSP</span>
+                                </div>
+                                <a href="../Semana/semana10.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 11 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="avanzado" data-week="11">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/semana11.png" alt="Semana 11 - Modelos Backend">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana11.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge avanzado">Avanzado</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 11</h3>
+                            <p class="work-description">
+                                Desarrollo de modelos backend utilizando clases Java. 
+                                Implementación de entidades, DTOs y lógica de negocio.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Entidades</span>
+                                <span class="tech-tag">Backend</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-box"></i> 8 Clases Modelo</span>
+                                </div>
+                                <a href="../Semana/semana11.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 12 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="avanzado" data-week="12">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/Semana12.png" alt="Semana 12 - Controladores Servlet">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana12.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge avanzado">Avanzado</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 12</h3>
+                            <p class="work-description">
+                                Implementación de controladores utilizando Servlets. 
+                                Manejo de peticiones HTTP y comunicación entre vista y modelo.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">Servlets</span>
+                                <span class="tech-tag">HTTP</span>
+                                <span class="tech-tag">MVC</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-gear"></i> 7 Controladores</span>
+                                </div>
+                                <a href="../Semana/semana12.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 13 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="avanzado" data-week="13">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/ModeloRelacional_Sem13.png" alt="Semana 13 - Base de Datos">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana13.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge avanzado">Avanzado</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 13</h3>
+                            <p class="work-description">
+                                Implementación y configuración de base de datos MySQL. 
+                                Diseño de esquemas, relaciones y procedimientos almacenados.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Database</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-database"></i> 12 Tablas</span>
+                                </div>
+                                <a href="../Semana/semana13.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 14 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="avanzado" data-week="14">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/Dashboard2_Sem14.png" alt="Semana 14 - Reportes">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana14.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge avanzado">Avanzado</div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 14</h3>
+                            <p class="work-description">
+                                Generación de reportes dinámicos y visualización de datos. 
+                                Implementación de gráficos, exportación a PDF y dashboards.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">Reportes</span>
+                                <span class="tech-tag">PDF</span>
+                                <span class="tech-tag">Charts</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-graph-up"></i> 6 Reportes</span>
+                                </div>
+                                <a href="../Semana/semana14.html" class="btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEMANA 15 -->
+                <div class="col-lg-4 col-md-6 work-item" data-category="avanzado" data-week="15">
+                    <div class="work-card featured">
+                        <div class="work-image">
+                            <img src="../CSSstart/img/Semana15.png" alt="Semana 15 - Aplicativo Terminado">
+                            <div class="work-overlay">
+                                <div class="work-actions">
+                                    <a href="../Semana/semana15.html" class="btn-action primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="btn-action secondary">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-badge featured">Proyecto Final</div>
+                            <div class="featured-badge">
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Semana 15</h3>
+                            <p class="work-description">
+                                Aplicación web completa y funcional integrando diseño UI/UX, JSP, 
+                                modelos backend, controladores, base de datos y reportes.
+                            </p>
+                            <div class="work-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">JSP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Figma</span>
+                            </div>
+                            <div class="work-footer">
+                                <div class="work-stats">
+                                    <span><i class="bi bi-check-circle"></i> 100% Completo</span>
+                                </div>
+                                <a href="../Semana/semana15.html" class="btn-primary featured">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100 d-flex flex-column">
-          <img src="../CSSstart/img/Semana5.png" class="card-img-top" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Semana 5</h5>
-            <p class="card-text flex-grow-1">Primer proyecto :Desarrollaremos la documentacion de un proyecto de un consultorio local que registre datos de medicos, pacientes, horarios y demas.</p>
-            <a href="../Semana/semana5.html" class="btn mt-auto">Ver documentación</a>
-          </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="modern-footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-3 mb-lg-0">
+                    <h5 class="fw-bold">Mis Trabajos - Desarrollo de Aplicativos</h5>
+                    <p class="mb-0">Colección completa de proyectos desarrollados durante el curso.</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <div class="footer-links">
+                        <a href="../index.html" class="btn btn-outline-light btn-sm me-2">
+                            <i class="bi bi-house"></i> Inicio
+                        </a>
+                        <a href="../MisInvest/Invest.html" class="btn btn-outline-light btn-sm me-2">
+                            <i class="bi bi-search"></i> Investigaciones
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <small>&copy; 2025 Miguel Cruz. Desarrollo de Aplicativos - UPLA</small>
+            </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100 d-flex flex-column">
-          <img src="../CSSstart/img/Semana5.png"style="width:300px;height:180px ;" class="card-img-top" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Semana 6</h5>
-            <p class="card-text flex-grow-1">Desarrollo de Base de datos del proyecto final y forma de proyecto.</p>
-            <a href="../Semana/semana6.html" class="btn mt-auto" >Ver documentación</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100 d-flex flex-column">
-          <img src="../CSSstart/img/I7HPH6EMIFNODANNCEVCDBH4BM.png"style="width:300px;height:180px ;" class="card-img-top" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Semana 7</h5>
-            <p class="card-text flex-grow-1">En proceso de desarrollo.</p>
-            <a href="#" class="btn mt-auto" style="background-color: dimgrey;">sin documentación</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100 d-flex flex-column">
-          <img src="../CSSstart/img/I7HPH6EMIFNODANNCEVCDBH4BM.png"style="width:300px;height:180px ;" class="card-img-top" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Semana 8</h5>
-            <p class="card-text flex-grow-1">En proceso de desarrollo.</p>
-            <a href="#" class="btn mt-auto"style="background-color: dimgrey;">Sin documentación</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100 d-flex flex-column">
-          <img src="../CSSstart/img/I7HPH6EMIFNODANNCEVCDBH4BM.png"style="width:300px;height:180px ;" class="card-img-top" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Semana 9</h5>
-            <p class="card-text flex-grow-1">Aplcacion de tomCat para crear entornos web con implementacion de JSP.</p>
-            <a href="../Semana/semana9.html" class="btn mt-auto">Abrir documentacion</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="trabajos.js"></script>
 </body>
 </html>

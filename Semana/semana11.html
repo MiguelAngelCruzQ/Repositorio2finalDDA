@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana 11 - Desarrollo de Aplicativos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="sem.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark modern-nav">
+    <div class="container">
+      <a class="navbar-brand text-accent fw-bold" href="../index.html">
+        <img src="../CSSstart/img/upla-white.png" alt="UPLA" class="nav-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"><i class="bi bi-house me-1"></i>Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../MisTrabajos/Mistrabajos.html"><i class="bi bi-briefcase me-1"></i>Mis trabajos</a>
+          </li>
+        </ul>     
+      </div>
+    </div>
+  </nav> 
+
+  <section class="hero hero-gradient d-flex align-items-center">
+    <div class="hero-particles"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-content animate-slide-in">
+            <div class="week-badge">
+              <i class="bi bi-window-desktop"></i>
+              <span>Semana 11</span>
+            </div>
+            <h1 class="hero-title">Modelos Backend (Clases)</h1>
+            <p class="hero-subtitle">
+              Desarrollo de la capa de modelo en el backend utilizando clases Java. 
+              Implementación de entidades, DTOs y lógica de negocio para el aplicativo web.
+            </p>
+            
+            <div class="hero-stats">
+              <div class="stat-card">
+                <i class="bi bi-box"></i>
+                <div>
+                  <span class="stat-number">8</span>
+                  <span class="stat-label">Clases Modelo</span>
+                </div>
+              </div>
+              <div class="stat-card">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <span class="stat-number">5</span>
+                  <span class="stat-label">Entidades</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="https://github.com/MiguelAngelCruzQ/ProyectoFinal2_IVC/tree/main/src/main/java/com/mycompany/proyectojsp_ivcupla/model" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-github me-2"></i>Ver Código
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="hero-visual">
+            <div class="models-preview">
+              <div class="models-header">
+                <div class="models-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="models-title">Modelos Backend - Java Classes</span>
+              </div>
+              <div class="models-content">
+                <img src="../CSSstart/img/semana11.png" alt="Modelos Backend del Sistema" class="models-main-image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELOS BACKEND -->
+  <section class="projects-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="bi bi-box me-2"></i>Modelos del Sistema de Tesis
+      </h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-person"></i>
+              </div>
+              <h3>Modelo Usuario</h3>
+            </div>
+            <div class="project-body">
+              <p>Entidad base para estudiantes, docentes y administradores con roles y permisos.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">JPA</span>
+                <span class="tech-tag">Annotations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-journal-bookmark"></i>
+              </div>
+              <h3>Modelo Tesis</h3>
+            </div>
+            <div class="project-body">
+              <p>Entidad principal que contiene información del boceto, aspirante y estado.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Entity</span>
+                <span class="tech-tag">Relations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3>Modelo Jurado</h3>
+            </div>
+            <div class="project-body">
+              <p>Gestión de jurados asignados: 3 jurados, 1 presidente y 1 asesor por tesis.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">ManyToMany</span>
+                <span class="tech-tag">Roles</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-clipboard-data"></i>
+              </div>
+              <h3>Modelo Calificación</h3>
+            </div>
+            <div class="project-body">
+              <p>Estructura para almacenar las 38 calificaciones de los formatos 4 y 5.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Complex Entity</span>
+                <span class="tech-tag">Scoring</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <h3>Modelo Acta</h3>
+            </div>
+            <div class="project-body">
+              <p>Entidad para generar y almacenar actas PDF con resultados de calificación.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">PDF Generation</span>
+                <span class="tech-tag">Templates</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h3>DTOs y Servicios</h3>
+            </div>
+            <div class="project-body">
+              <p>Objetos de transferencia de datos y servicios para lógica de negocio.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">DTO Pattern</span>
+                <span class="tech-tag">Business Logic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARQUITECTURA DE MODELOS -->
+  <section class="theory-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="bi bi-diagram-3 me-2"></i>Arquitectura de Modelos
+      </h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-8 mx-auto">
+          <div class="theory-content">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Entidades JPA</h4>
+                <p>Uso de anotaciones @Entity, @Table, @Id para mapeo objeto-relacional con la base de datos.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Relaciones entre Entidades</h4>
+                <p>Implementación de @OneToMany, @ManyToOne y @ManyToMany para modelar relaciones complejas.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Validaciones</h4>
+                <p>Aplicación de Bean Validation con anotaciones @NotNull, @Size, @Email para integridad de datos.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4>Patrón DTO</h4>
+                <p>Creación de Data Transfer Objects para transferir datos entre capas sin exponer entidades.</p>
+              </div>
+            </div>
+            
+            <div class="process-step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h4>Servicios de Negocio</h4>
+                <p>Implementación de la lógica de negocio en servicios separados de las entidades.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="modern-footer py-4">
+    <div class="container">
+      <div class="text-center">
+        <h5 class="fw-bold">Semana 11 - Interfaces Gráficas</h5>
+        <p>&copy; 2025 Miguel Cruz. Desarrollo de Aplicativos - UPLA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="semanas.js"></script>
+</body>
+</html>
+  <!-- CAPTURAS MODELOS -->
+  <section class="screenshots-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="bi bi-images me-2"></i>Capturas de los Modelos Backend
+      </h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-12">
+          <div class="screenshot-card">
+            <div class="screenshot-image">
+              <img src="../CSSstart/img/semana11.png" alt="Modelos Backend Desarrollados" class="img-fluid">
+              <div class="screenshot-overlay">
+                <h5>Clases Modelo del Sistema</h5>
+                <p>Entidades Java para Usuario, Tesis, Jurado, Calificación y Acta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

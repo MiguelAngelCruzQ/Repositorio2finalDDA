@@ -32,13 +32,22 @@
     <div class="collapse navbar-collapse" id="navMain">
       <ul class="navbar-nav ms-auto align-items-center">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navTrabajos">Trabajos</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navTrabajos" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajos</a>
           <ul class="dropdown-menu" aria-labelledby="navTrabajos">
             <li><a class="dropdown-item" href="Semana/semana1.html">Semana 1</a></li>
             <li><a class="dropdown-item" href="Semana/semana2.html">Semana 2</a></li>
             <li><a class="dropdown-item" href="Semana/semana3.html">Semana 3</a></li>
             <li><a class="dropdown-item" href="Semana/semana4.html">Semana 4</a></li>
             <li><a class="dropdown-item" href="Semana/semana5.html">Semana 5</a></li>
+            <li><a class="dropdown-item" href="Semana/semana6.html">Semana 6</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Semana/semana9.html">Semana 9</a></li>
+            <li><a class="dropdown-item" href="Semana/semana10.html">Semana 10</a></li>
+            <li><a class="dropdown-item" href="Semana/semana11.html">Semana 11</a></li>
+            <li><a class="dropdown-item" href="Semana/semana12.html">Semana 12</a></li>
+            <li><a class="dropdown-item" href="Semana/semana13.html">Semana 13</a></li>
+            <li><a class="dropdown-item" href="Semana/semana14.html">Semana 14</a></li>
+            <li><a class="dropdown-item" href="Semana/semana15.html">Semana 15</a></li>
           </ul>
         </li>
 
@@ -63,29 +72,59 @@
       
       <!-- Texto izquierda -->
       <div class="col-lg-6 text-center text-lg-start">
-        <h1 class="hero-title">DESARROLLO DE APLICATÍVOS</h1>
-        <p class="hero-subtitle">Cruz Quispe Miguel Angel</p>
-        <a href="MisTrabajos/Mistrabajos.html" class="btn btn-principal btn-lg rounded-pill px-4 py-2">
-          Mis trabajos
-        </a>
-        <a href="MisInvest/Invest.html" class="btn btn-principal btn-lg rounded-pill px-4 py-2">
-          Mis Investigaciones
-        </a>
+        <div class="hero-content">
+          <h1 class="hero-title animate-title">DESARROLLO DE APLICATÍVOS</h1>
+          <p class="hero-subtitle animate-subtitle">Cruz Quispe Miguel Angel</p>
+          <div class="hero-buttons animate-buttons">
+            <a href="MisTrabajos/Mistrabajos.html" class="btn btn-principal btn-lg rounded-pill px-4 py-2 me-3 mb-2">
+              <i class="bi bi-briefcase me-2"></i>Mis trabajos
+            </a>
+            <a href="MisInvest/Invest.html" class="btn btn-secondary btn-lg rounded-pill px-4 py-2 mb-2">
+              <i class="bi bi-search me-2"></i>Mis Investigaciones
+            </a>
+          </div>
+          <div class="hero-stats mt-4">
+            <div class="stat-item">
+              <span class="stat-number" data-target="15">0</span>
+              <span class="stat-label">Semanas</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="30">0</span>
+              <span class="stat-label">Proyectos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="5">0</span>
+              <span class="stat-label">Tecnologías</span>
+            </div>
+          </div>
+        </div>
       </div>
       
       <!-- Collage derecha -->
       <div class="col-lg-6 d-flex justify-content-center">
-        <div class="collage">
-          <img src="CSSstart/img/sem3Verd2.png" class="item item1" alt="Proyecto 1">
-          <img src="CSSstart/img/CodigoPry1.png" class="item item2" alt="Proyecto 2">
+        <div class="hero-visual-container">
+          <div class="collage">
+            <img src="CSSstart/img/sem3Verd2.png" class="item item1 animate-float" alt="Proyecto 1">
+            <img src="CSSstart/img/CodigoPry1.png" class="item item2 animate-float-delay" alt="Proyecto 2">
+          </div>
+
+          <!-- ICONOS FLOTANDO MEJORADOS -->
+          <div class="floating-icons">
+            <img src="CSSstart/img/java-icon.png" class="icon floating-icon icon1" alt="Java">
+            <img src="CSSstart/img/netbeans-icon.png" class="icon floating-icon icon2" alt="NetBeans">
+            <img src="CSSstart/img/Github2.0.png" class="icon floating-icon icon3" alt="GitHub">
+            <img src="CSSstart/img/java-icon.png" class="icon floating-icon icon4" alt="Java">
+          </div>
+
+          <!-- Partículas animadas -->
+          <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+          </div>
         </div>
-
-        <!-- ICONOS FLOTA NDO -->
-      
-          <img src="CSSstart/img/java-icon.png" class="icon floating-icon icon2" alt="Java">
-          <img src="CSSstart/img/java-icon.png" class="icon floating-icon icon4" alt="Java">
-         
-
       </div>
     </div>
   </div>
@@ -110,38 +149,83 @@
   </section>
 
   <!-- SECCION DE HABILIDADES -->
-  <section id="habilidades" class="container py-5">
-    <h2 class="text-center mb-5" style="color: var(--accent); font-weight:800;">Mis Habilidades</h2>
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <div class="mb-4">
-          <span>Java</span>
-          <div class="progress skill-bar">
-            <div class="progress-bar bg-accent" style="width:66%">66%</div>
-          </div>
-        </div>
-        <div class="mb-4">
-          <span>JavaScript</span>
-          <div class="progress skill-bar">
-            <div class="progress-bar bg-accent" style="width:50%">50%</div>
-          </div>
-        </div>
-        <div class="mb-4">
-          <span>CSS</span>
-          <div class="progress skill-bar">
-            <div class="progress-bar bg-accent" style="width:50%">50%</div>
-          </div>
-        </div>
-        <div class="mb-4">
-          <span>HTML</span>
-          <div class="progress skill-bar">
-            <div class="progress-bar bg-accent" style="width:50%">50%</div>
-          </div>
-        </div>
-        <div class="mb-4">
-          <span>Bootstrap</span>
-          <div class="progress skill-bar">
-            <div class="progress-bar bg-accent" style="width:50%">50%</div>
+  <section id="habilidades" class="skills-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Mis Habilidades</h2>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="skills-grid">
+            <div class="skill-item" data-skill="66">
+              <div class="skill-icon">
+                <img src="CSSstart/img/java-icon.png" alt="Java">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <div class="progress skill-bar">
+                  <div class="progress-bar bg-accent" data-width="66">66%</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item" data-skill="50">
+              <div class="skill-icon">
+                <i class="bi bi-filetype-js"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <div class="progress skill-bar">
+                  <div class="progress-bar bg-accent" data-width="50">50%</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item" data-skill="55">
+              <div class="skill-icon">
+                <i class="bi bi-filetype-css"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">CSS</span>
+                <div class="progress skill-bar">
+                  <div class="progress-bar bg-accent" data-width="55">55%</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item" data-skill="60">
+              <div class="skill-icon">
+                <i class="bi bi-filetype-html"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">HTML</span>
+                <div class="progress skill-bar">
+                  <div class="progress-bar bg-accent" data-width="60">60%</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item" data-skill="50">
+              <div class="skill-icon">
+                <i class="bi bi-bootstrap"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Bootstrap</span>
+                <div class="progress skill-bar">
+                  <div class="progress-bar bg-accent" data-width="50">50%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-skill="45">
+              <div class="skill-icon">
+                <img src="CSSstart/img/Github2.0.png" alt="Git">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Git & GitHub</span>
+                <div class="progress skill-bar">
+                  <div class="progress-bar bg-accent" data-width="45">45%</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -155,11 +239,11 @@
         <p>©2025 Este sitio fue creado sin fines de lucro</p>
       </div>
       <div class="col-lg-4 mb-3 mb-lg-0">
-        <p>Semanas:</p>
+        <p>Semanas Recientes:</p>
         <a href="Semana/semana1.html" class="footer-link">Semana 1</a>
-        <a href="#week2" class="footer-link">Semana 2</a>
-        <a href="#week3" class="footer-link">Semana 3</a>
-        <a href="#week4" class="footer-link">Semana 4</a>
+        <a href="Semana/semana2.html" class="footer-link">Semana 2</a>
+        <a href="Semana/semana9.html" class="footer-link">Semana 9</a>
+        <a href="Semana/semana15.html" class="footer-link">Semana 15</a>
       </div>
       <div class="col-lg-4">
         <p>Investigaciones:</p>
@@ -306,27 +390,323 @@ footer a.footer-link:hover {
   color: white !important;
   border-radius: 10px;
 }
-/* ICONOS FLOTANTES */
-.icon { width: 60px; height: 60px; position: absolute; }
-.floating-icon {
-  animation: floatAnim 6s ease-in-out infinite alternate;
+/* HERO MEJORADO */
+.hero-content {
+  position: relative;
+  z-index: 10;
 }
-.icon1 { top: 10%; left: 5%; animation-delay: 0s; }
-.icon2 { top: 20%; left: 70%; animation-delay: 1s; }
-.icon3 { top: 60%; left: 30%; animation-delay: 2s; }
-.icon4 { top: 50%; left: 80%; animation-delay: 3s; }
-.icon5 { top: 75%; left: 20%; animation-delay: 4s; }
 
-@keyframes floatAnim {
-  0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(10deg); }
-  100% { transform: translateY(0px) rotate(-10deg); }
+.animate-title {
+  animation: slideInLeft 1s ease-out;
+}
+
+.animate-subtitle {
+  animation: slideInLeft 1s ease-out 0.2s both;
+}
+
+.animate-buttons {
+  animation: slideInUp 1s ease-out 0.4s both;
+}
+
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ESTADÍSTICAS ANIMADAS */
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 0.5rem;
+}
+
+/* BOTÓN SECUNDARIO */
+.btn-secondary {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid var(--accent);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--accent);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(124,196,182,0.3);
+}
+
+/* VISUAL CONTAINER MEJORADO */
+.hero-visual-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.animate-float {
+  animation: floatSoft 3s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: floatSoft 3s ease-in-out infinite 1.5s;
+}
+
+@keyframes floatSoft {
+  0%, 100% { transform: translateY(0px) rotate(-2deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+/* ICONOS FLOTANTES MEJORADOS */
+.floating-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.icon { 
+  width: 50px; 
+  height: 50px; 
+  position: absolute; 
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  padding: 8px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.floating-icon {
+  animation: floatAdvanced 8s ease-in-out infinite;
+}
+
+.icon1 { top: 10%; left: 5%; animation-delay: 0s; }
+.icon2 { top: 20%; right: 10%; animation-delay: 2s; }
+.icon3 { bottom: 30%; left: 15%; animation-delay: 4s; }
+.icon4 { bottom: 10%; right: 20%; animation-delay: 6s; }
+
+@keyframes floatAdvanced {
+  0%, 100% { 
+    transform: translateY(0px) translateX(0px) rotate(0deg) scale(1); 
+    opacity: 0.8;
+  }
+  25% { 
+    transform: translateY(-15px) translateX(10px) rotate(5deg) scale(1.1); 
+    opacity: 1;
+  }
+  50% { 
+    transform: translateY(-10px) translateX(-5px) rotate(-3deg) scale(0.95); 
+    opacity: 0.9;
+  }
+  75% { 
+    transform: translateY(-20px) translateX(15px) rotate(8deg) scale(1.05); 
+    opacity: 1;
+  }
+}
+
+/* PARTÍCULAS */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: particleFloat 15s linear infinite;
+}
+
+.particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+.particle:nth-child(2) { left: 30%; animation-delay: 3s; }
+.particle:nth-child(3) { left: 50%; animation-delay: 6s; }
+.particle:nth-child(4) { left: 70%; animation-delay: 9s; }
+.particle:nth-child(5) { left: 90%; animation-delay: 12s; }
+
+@keyframes particleFloat {
+  0% { 
+    transform: translateY(100vh) scale(0); 
+    opacity: 0; 
+  }
+  10% { 
+    opacity: 1; 
+    transform: translateY(90vh) scale(1); 
+  }
+  90% { 
+    opacity: 1; 
+    transform: translateY(-10vh) scale(1); 
+  }
+  100% { 
+    transform: translateY(-20vh) scale(0); 
+    opacity: 0; 
+  }
+}
+
+/* SECCIÓN DE HABILIDADES MEJORADA */
+.skills-section {
+  background: linear-gradient(135deg, #1a2f2a, #0f1b18);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(124,196,182,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+}
+
+.section-title {
+  color: var(--accent);
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: skillFadeIn 0.6s ease forwards;
+}
+
+.skill-item:nth-child(1) { animation-delay: 0.1s; }
+.skill-item:nth-child(2) { animation-delay: 0.2s; }
+.skill-item:nth-child(3) { animation-delay: 0.3s; }
+.skill-item:nth-child(4) { animation-delay: 0.4s; }
+.skill-item:nth-child(5) { animation-delay: 0.5s; }
+.skill-item:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes skillFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(124,196,182,0.2);
+  border-color: var(--accent);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  border-radius: 12px;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.skill-icon img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.skill-info {
+  flex: 1;
+}
+
+.skill-name {
+  display: block;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-bar .progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-strong));
+  border-radius: 4px;
+  transition: width 1.5s ease;
+  width: 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </body>
 </html>
-
-
-
-
 
